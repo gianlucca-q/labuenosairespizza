@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #E91011;
-    --secondary-color: #DC9888;
-    --third-color: #FFE5D9;
+    --primary-color: #deb887;
+    --secondary-color: #ffffff;
+    --third-color: #000000;
     --fourth-color: #54B9CC;
 }
 * {
@@ -20,7 +20,7 @@ html, body {
     width:100%;
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: var(--primary-color);
 }
 /*--------------------------------*/
 .opacity {
@@ -95,10 +95,10 @@ html, body {
 .infoCont p {
     font-size: 1.3em;
     text-align: justify;
+    color: var(--secondary-color);
 }
 /*--------------------------------*/
 .social {
-    margin: 2% auto 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +107,7 @@ html, body {
 .socialIcon {
     width: 40px;
     margin-right: 2vh;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
+    filter: invert(91%) sepia(3%) saturate(6282%) hue-rotate(323deg) brightness(99%) contrast(76%);
 }
 /*--------------------------------*/
 .allWidgetCont {
@@ -120,7 +120,7 @@ html, body {
     height: 50px;
     padding: 1vh;
     display: flex;
-    background-color: white;
+    background-color: var(--primary-color);
     border-radius: 10px;
 }
 .widgetIcon {
@@ -130,7 +130,7 @@ html, body {
 .widgetText {
     margin: auto;
     margin-left: .5vh;
-    color: black;
+    color: var(--third-color);
     font-size: 1.5em;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;
@@ -155,7 +155,7 @@ html, body {
     flex-direction: row;
 }
 .linkCont h3 {
-    color: white;
+    color: var(--secondary-color);
 }
 /*--------------------------------*/
 .menuIconCont {
@@ -200,12 +200,6 @@ html, body {
 /*--------------------------------*/
 /*--------------------------------*/
 @media (max-width: 1440px) { /*-LAPTOP L-*/
-    * {
-        color: brown;
-    }
-    /*--------------------------------*/
-    /*--------------------------------*/
-    /*--------------------------------*/
     .contDown {
         flex-direction: column;
     }
@@ -214,12 +208,6 @@ html, body {
     }
 }
 @media (max-width: 768px) { /*-TABLET-*/
-    * {
-        color: violet;
-    }
-    /*--------------------------------*/
-    /*--------------------------------*/
-    /*--------------------------------*/
     .infoCont h1 {
         font-size: 2.3em;
     }
@@ -228,28 +216,61 @@ html, body {
         display: flex;
         flex-direction: column;
     }
+    .socialIcon {
+        margin: 10% auto;
+    }
+    /*--------------------------------*/
+    .allWidgetCont {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 0 0 10%;
+    }
+    .widgetCont {
+        width: 100%;
+        height: 60px;
+    }
+    .phoneCont {
+        margin: 0 0 2%;
+    }
     /*--------------------------------*/
     .menuIconCont a, .aboutIconCont a {
         padding: 5% 25%;
     }
-    /*--------------------------------*/
 }
 @media (max-width: 500px) { /*-MOBILE L-*/
-    * {
-        color: burlywood;
-    }
-    /*--------------------------------*/
-    /*--------------------------------*/
-    /*--------------------------------*/
     .infoCont h1 {
         font-size: 3em;
     }
-    /*--------------------------------*/
+    .infoCont p {
+        text-align: left;
+    }
 }
-
-
-
-
+@media (max-width: 425px) { /*-MOBILE M-*/
+    .brandLogo {
+        width: 300px;
+    }
+    .brandText {
+        font-size: 4em;
+    }
+    /*--------------------------------*/
+    
+    .infoCont h1 {
+        font-size: 2.5em;
+    }
+    /*--------------------------------*/
+    .widgetCont {
+        transform: scale(.9);
+    }
+    /*--------------------------------*/
+    .menuIconCont a, .aboutIconCont a {
+        padding: 10% 15%;
+    }
+}
+@media (max-width: 400px) { /*-MOBILE S-*/
+    .widgetText {
+        font-size: 1.3em;
+    }
+}
 
 /*
 font-family: 'Caveat', cursive;
@@ -257,160 +278,4 @@ font-family: 'Kaushan Script', cursive;
 font-family: 'Playfair Display', serif;
 font-family: 'Satisfy', cursive;
 font-family: 'Yellowtail', cursive;
-
-
-@media (max-width: 1600px) {
-    .infoCont h1 {
-        font-size: 2.5em;
-    }
-    .infoCont {
-        max-width: 100%;
-        margin-right: 2%;
-    }
-    .social {
-        max-width: 100%;
-        margin-right: 2%;
-    }
-    .rightContent h3 {
-        font-size: 1.3em;
-        white-space: nowrap;
-    }
-}
-@media (max-width: 1400px) {
-    .contDown {
-        max-width: 100%;
-        padding: 2vh 5vh 5vh;
-    }
-
-    .infoCont h1 {
-        font-size: 2em;
-    }
-    .allWidgetCont {
-        margin: 0;
-    }
-
-    .rightContent {
-        margin: auto;
-    }
-    .vl {
-        margin: 0 1vh;
-    }
-    .linkCont {
-        transform: scale(.8);
-    }
-}
-@media (max-width: 1000px) {
-    body {
-        height: max-content;
-    }
-    .brandCont {
-        transform: scale(.9);
-    }
-
-    .contContent {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .leftContent {
-        margin: auto;
-        width: 100%;
-        margin-bottom: 2vh;
-        border-bottom: 1px solid white;
-        padding-bottom: 2vh;
-    }
-    .vl {
-        display: none;
-    }
-    .leftContent h1 {
-        font-size: 2.5em;
-    }
-    .linkCont {
-        margin-top: 5vh;
-        background-color: white;
-        color: black;
-        border-radius: 15px;
-        padding: 2vh;
-        width: 200px;
-        height: 180px;
-        transform: scale(1.3);
-    }
-    .menuIcon, .aboutUsIcon {
-        filter: none;
-    }
-}
-@media (max-width: 740px) {
-    .brandCont {
-        transform: scale(.8);
-    }
-    .brandText {
-        outline: auto;
-    }
-
-    .infoCont h1 {
-        font-size: 2em;
-    }
-    .socialCont {
-        margin: auto 0;
-        width: 100%;
-    }
-    .socialIcon {
-        margin: 0 .5vh;
-    }
-
-    .allWidgetCont {
-        margin: auto;
-    }
-    .widgetCont {
-        font-size: .8em;
-    }
-
-    .rightContent {
-        display: flex;
-        flex-direction: column;
-        margin: 5vh 0;
-    }
-    .linkCont {
-        transform: scale(1);
-        margin: auto;
-        width: 100%;
-        height: 300px;
-        border-radius: 0;
-        margin-bottom: 20vh;
-        padding: 0;
-    }
-    .linkCont div img {
-        margin: auto;
-    }
-}
-@media (max-width: 550px) {
-    .leftContent h1 {
-        font-size: 3em;
-        text-align: left;
-    }
-    .socialCont {
-        width: 10%;
-    }
-    .allWidgetCont {
-        margin: auto 2vh;
-    }
-    .widgetCont {
-        transform: scale(1);
-        margin-bottom: 1vh;
-    }
-    
-}
-@media (max-width: 440px) {
-    .allWidgetCont {
-        flex-direction: column;
-    }
-    .leftContent h1 {
-        font-size: 2em;
-        text-align: left;
-    }
-    .brandCont {
-        transform: scale(.8);
-    }
-}
-
 */
