@@ -7,13 +7,13 @@
 * {
     user-select: none;
     -webkit-user-drag: none;
-    transition: all .3s;
+    transition: all .2s;
 }
 html, body {
     background-color: #0c1318;
     background-image: url(./imgs/pizzaBackground.jpg);
-    background-size: auto;
     background-repeat: no-repeat;
+    background-size: auto;
     background-position: center;
     background-attachment: fixed;
     height:100%;
@@ -22,14 +22,14 @@ html, body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
-
-.opacity2 {
-    background: rgba(0, 0, 0, 0.703);
-}
+/*--------------------------------*/
 .opacity {
     background: rgba(0, 0, 0, 0.5);
 }
-
+.opacity2 {
+    background: rgba(0, 0, 0, 0.703);
+}
+/*--------------------------------*/
 .grow {
     transition: all .2s ease-in-out;
 }
@@ -37,14 +37,13 @@ html, body {
     transform: scale(1.2);
     z-index: 1;
 }
-
+/*--------------------------------*/
 .contMain {
-    height:100%;
-    margin:0;
-    position: relative;
     display: flex;
     flex-direction: column;
 }
+/*--------------------------------*/
+/*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
@@ -63,7 +62,6 @@ html, body {
     margin-top: 2vh;
 
     font-size: 5em;
-    color: white;
     font-family: 'Kaushan Script', cursive;
     text-align: center;
 }
@@ -86,7 +84,7 @@ html, body {
 /*--------------------------------*/
 .contUp {
     max-width: 80%;
-    margin: auto;
+    margin: 2% auto;
 }
 /*--------------------------------*/
 .infoCont h1 {
@@ -100,7 +98,7 @@ html, body {
 }
 /*--------------------------------*/
 .social {
-    margin: 2% auto;
+    margin: 2% auto 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,10 +149,10 @@ html, body {
 }
 /*--------------------------------*/
 .linkCont {
-    text-decoration: none;
     width: 100%;
     height: 400px;
     display: flex;
+    flex-direction: row;
 }
 .linkCont h3 {
     color: white;
@@ -172,11 +170,12 @@ html, body {
     background-size: cover;
     background-position: center;
 }
-.menuIconCont div, .aboutIconCont div {
+.menuIconCont a, .aboutIconCont a {
     margin: auto;
     text-align: center;
     border: 5px solid white;
     padding: 7% 35%;
+    text-decoration: none;
 }
 /*--------------------------------*/
 .widgetDownIcon {
@@ -195,60 +194,62 @@ html, body {
 .backgroundOpacity:hover {
     background: rgba(12, 19, 24, 0.6);
 }
-
-
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
-/*--------------------------------*/
-/*--------------------------------*/
-/*--------------------------------*/
-/*--------------------------------*/
-
-.contMenu {
-    max-width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+@media (max-width: 1440px) { /*-LAPTOP L-*/
+    * {
+        color: brown;
+    }
+    /*--------------------------------*/
+    /*--------------------------------*/
+    /*--------------------------------*/
+    .contDown {
+        flex-direction: column;
+    }
+    .menuIconCont a, .aboutIconCont a {
+        padding: 5% 35%;
+    }
+}
+@media (max-width: 768px) { /*-TABLET-*/
+    * {
+        color: violet;
+    }
+    /*--------------------------------*/
+    /*--------------------------------*/
+    /*--------------------------------*/
+    .infoCont h1 {
+        font-size: 2.3em;
+    }
+    /*--------------------------------*/
+    .socialCont {
+        display: flex;
+        flex-direction: column;
+    }
+    /*--------------------------------*/
+    .menuIconCont a, .aboutIconCont a {
+        padding: 5% 25%;
+    }
+    /*--------------------------------*/
+}
+@media (max-width: 500px) { /*-MOBILE L-*/
+    * {
+        color: burlywood;
+    }
+    /*--------------------------------*/
+    /*--------------------------------*/
+    /*--------------------------------*/
+    .infoCont h1 {
+        font-size: 3em;
+    }
+    /*--------------------------------*/
 }
 
-.hero {
-    display: flex;
-    justify-content: space-between;
-}
-.contMenuTitle {
-    width: max-content;
-    margin: 2vh 0;
-    padding: 0 2vh;
-    border-radius: 15px;
-}
-.menuTitle {
-    color: white;
-    filter: drop-shadow(5px 5px #686868);
-    font-size: 7em;
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-}
 
-.contHomeTitle {
-    width: max-content;
-    margin: auto 0;
-    padding: 0 2vh;
-    border-radius: 15px;
-}
-.homeTitle {
-    color: white;
-    filter: drop-shadow(5px 5px #686868);
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 3em;
-}
-.homeTitle a {
-    text-decoration: none;
-    color: white;
-}
+
+
 
 /*
 font-family: 'Caveat', cursive;
@@ -256,112 +257,6 @@ font-family: 'Kaushan Script', cursive;
 font-family: 'Playfair Display', serif;
 font-family: 'Satisfy', cursive;
 font-family: 'Yellowtail', cursive;
-*/
-/*--------------------------------*/
-
-.contAllPizzaWidget {
-    margin: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2vh;
-    border-radius: 15px;
-}
-.contAllPizzaWidget .row {
-    margin: 0;
-    padding: 0;
-}
-
-/*--------------------------------*/
-.contWidgetTitle {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-}
-.contWidgetTitle .col {
-    padding: 0;
-    margin: 0;
-}
-.whiteLine {
-    border-bottom: 1px solid white;
-}
-.widgetTitle {
-    margin: 0;
-    font-family: 'Kaushan Script', cursive;
-    color: #ffffff;
-    filter: drop-shadow(5px 5px #00780c);
-    font-size: 10em;
-}
-.imgWidget {
-    margin: auto;
-    width: 100%;
-    height: 200px;
-    background-color: #0c1318;
-    background-image: url(./imgs/pizzaListOne.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-
-}
-
-/*--------------------------------*/
-
-.textWidget {
-    margin: 0;
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
-    letter-spacing: .1vh;
-    width: max-content;
-}
-
-.textWidgetPrice{
-    margin: 0;
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
-    letter-spacing: .1vh;
-}
-
-.leftMenuWidget {
-    margin: 0;
-    padding: 2vh;
-    display: flex;
-    justify-content: space-between;
-}
-.rightMenuWidget {
-    margin: 0;
-    padding: 2vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-@media (max-width: 1460px) {
-    .menuWidgetsCont{
-        display: flex;
-        flex-direction: column;
-    }
-    .leftMenuWidget {
-        border-bottom: 1px solid white;
-    }
-} 
-@media (max-width: 1200px) {
-    .widgetTitle {
-        margin: auto;
-        padding: auto;
-        font-size: 8em;
-    }
-    .contWidgetTitle {
-        margin: auto;
-    }
-} 
-
 
 
 @media (max-width: 1600px) {
@@ -381,7 +276,6 @@ font-family: 'Yellowtail', cursive;
         white-space: nowrap;
     }
 }
-
 @media (max-width: 1400px) {
     .contDown {
         max-width: 100%;
@@ -405,7 +299,6 @@ font-family: 'Yellowtail', cursive;
         transform: scale(.8);
     }
 }
-
 @media (max-width: 1000px) {
     body {
         height: max-content;
@@ -446,7 +339,6 @@ font-family: 'Yellowtail', cursive;
         filter: none;
     }
 }
-
 @media (max-width: 740px) {
     .brandCont {
         transform: scale(.8);
@@ -491,7 +383,6 @@ font-family: 'Yellowtail', cursive;
         margin: auto;
     }
 }
-
 @media (max-width: 550px) {
     .leftContent h1 {
         font-size: 3em;
@@ -509,7 +400,6 @@ font-family: 'Yellowtail', cursive;
     }
     
 }
-
 @media (max-width: 440px) {
     .allWidgetCont {
         flex-direction: column;
@@ -523,16 +413,4 @@ font-family: 'Yellowtail', cursive;
     }
 }
 
-
-/*
-font-family: 'Caveat', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Playfair Display', serif;
-font-family: 'Satisfy', cursive;
-font-family: 'Yellowtail', cursive;
 */
-
-/*--------------------------------*/
-
-
-/*--------------------------------*/
