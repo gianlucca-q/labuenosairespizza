@@ -18,6 +18,9 @@ html, body {
     background-attachment: fixed;
     height:100%;
     width:100%;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 .opacity2 {
@@ -42,13 +45,11 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
-
 .brandCont {
-    margin: auto;
+    margin: 4% auto;
     text-align: center;
 }
 .brandLogo{
@@ -59,132 +60,146 @@ html, body {
 .brandText {
     margin: 0;
     padding: 0;
-    margin-top: 5vh;
+    margin-top: 2vh;
 
     font-size: 5em;
     color: white;
     font-family: 'Kaushan Script', cursive;
     text-align: center;
 }
-
-/*
-font-family: 'Caveat', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Playfair Display', serif;
-font-family: 'Satisfy', cursive;
-font-family: 'Yellowtail', cursive;
-*/
 /*--------------------------------*/
-
-.contDown {
-    height: max-content;
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.contSection {
+    height: 100%;
     width: 100%;
-    margin-top: auto;
-
-    padding: 2vh 15vh 5vh;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /*--------------------------------*/
-
-.infoCont {
-    max-width: 70%;
-    text-align: justify;
+.section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+/*--------------------------------*/
+.contUp {
+    max-width: 80%;
+    margin: auto;
+}
+/*--------------------------------*/
 .infoCont h1 {
     font-size: 3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', serif;
     letter-spacing: .5vh;
 }
-
+.infoCont p {
+    font-size: 1.3em;
+    text-align: justify;
+}
 /*--------------------------------*/
-
 .social {
-    max-width: 70%;
-    margin-top: 2vh;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 2% auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
-.socialCont {
-    margin: auto 0;
-}
+/*--------------------------------*/
 .socialIcon {
-    width: 30px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
-    float: left;
+    width: 40px;
     margin-right: 2vh;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
 }
-
+/*--------------------------------*/
 .allWidgetCont {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
 .widgetCont {
-    margin: auto 0;
-    display: flex;
-    align-items: baseline;
-    border-radius: 10px;
-    background-color: white;
-    padding: 1vh;
     width: max-content;
     height: 50px;
+    padding: 1vh;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
 }
 .widgetIcon {
-    margin: auto;
     width: 20px;
     filter: invert(0%) sepia(0%) saturate(7486%) hue-rotate(340deg) brightness(99%) contrast(106%);float: left;
 }
 .widgetText {
     margin: auto;
-    font-family:'Times New Roman', Times, serif;
-    color: black;
-    font-weight: 900;
-    font-size: 1.5em;
     margin-left: .5vh;
+    color: black;
+    font-size: 1.5em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
 }
 .phoneCont {
     margin-right: 3vh;
 }
-
 /*--------------------------------*/
-
-.rightContent, .rightContent::after {
-    margin: auto;
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.contDown{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
+/*--------------------------------*/
 .linkCont {
-    margin: auto;
-    text-align: center;
     text-decoration: none;
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+.linkCont h3 {
     color: white;
 }
-.menuIcon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
-    width: 90px;
-    margin: auto;
-    margin-bottom: 2vh;
+/*--------------------------------*/
+.menuIconCont {
+    background-image: url(./imgs/pizzaListOne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.aboutUsIcon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
-    width: 90px;
-    margin: auto;
-    margin-bottom: 4vh;
+.aboutIconCont {
+    background-image: url(./imgs/pizzaListTwo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.rightContent h3 {
+.menuIconCont div, .aboutIconCont div {
     margin: auto;
-    font-size: 1.5em;
+    text-align: center;
+    border: 5px solid white;
+    padding: 7% 35%;
+}
+/*--------------------------------*/
+.widgetDownIcon {
+    margin: auto;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
+    width: 150px;
+    height: 150px;
+}
+.widgetDownText {
+    margin: auto;
+    font-size: 2em;
+}
+.changeBackgroundOpacity:hover {
+    background: rgba(12, 19, 24, 0.259);
 }
 
-.vl {
-    border-left: .5vh solid white;
-    border-radius: 5vh;
-}
 
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
@@ -436,30 +451,41 @@ font-family: 'Yellowtail', cursive;
     .brandText {
         outline: auto;
     }
+
     .infoCont h1 {
         font-size: 2em;
     }
     .socialCont {
         margin: auto 0;
-        width: 30%;
+        width: 100%;
     }
     .socialIcon {
         margin: 0 .5vh;
     }
+
     .allWidgetCont {
         margin: auto;
-        justify-content: right;
-        white-space: nowrap;
     }
     .widgetCont {
         font-size: .8em;
     }
+
     .rightContent {
         display: flex;
         flex-direction: column;
+        margin: 5vh 0;
     }
     .linkCont {
-        margin: 5vh auto;
+        transform: scale(1);
+        margin: auto;
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+        margin-bottom: 20vh;
+        padding: 0;
+    }
+    .linkCont div img {
+        margin: auto;
     }
 }
 
@@ -478,6 +504,7 @@ font-family: 'Yellowtail', cursive;
         transform: scale(1);
         margin-bottom: 1vh;
     }
+    
 }
 
 @media (max-width: 440px) {
