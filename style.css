@@ -189,8 +189,11 @@ html, body {
     margin: auto;
     font-size: 2em;
 }
-.changeBackgroundOpacity:hover {
-    background: rgba(12, 19, 24, 0.259);
+.backgroundOpacity {
+    background: rgba(12, 19, 24, 0.2);
+}
+.backgroundOpacity:hover {
+    background: rgba(12, 19, 24, 0.6);
 }
 
 
