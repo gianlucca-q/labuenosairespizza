@@ -7,11 +7,13 @@
 * {
     user-select: none;
     -webkit-user-drag: none;
+    transition: all .3s;
 }
 html, body {
     background-image: url(./imgs/pizzaBackground.jpg);
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
+    background-position: 50% 30%;
     height: 100%;
 }
 
@@ -39,6 +41,38 @@ html, body {
 }
 
 /*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+
+.brandCont {
+    margin: auto;
+    text-align: center;
+}
+.brandLogo{
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+.brandText {
+    margin: 0;
+    padding: 0;
+    margin-top: 2vh;
+    outline: auto;
+
+    font-size: 5em;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+
+/*
+font-family: 'Caveat', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Yellowtail', cursive;
+*/
+/*--------------------------------*/
 
 .contDown {
     height: max-content;
@@ -52,11 +86,11 @@ html, body {
 
 /*--------------------------------*/
 
-.leftContent {
+.infoCont {
     max-width: 70%;
     text-align: justify;
 }
-.leftContent h3 {
+.infoCont h1 {
     font-size: 3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: .5vh;
@@ -71,12 +105,13 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .socialCont {
     margin: auto 0;
 }
 .socialIcon {
-    width: 3vh;
+    width: 30px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
     float: left;
     margin-right: 2vh;
@@ -93,10 +128,12 @@ html, body {
     border-radius: 10px;
     background-color: white;
     padding: 1vh;
+    width: max-content;
+    height: 50px;
 }
 .widgetIcon {
     margin: auto;
-    width: 2vh;
+    width: 20px;
     filter: invert(0%) sepia(0%) saturate(7486%) hue-rotate(340deg) brightness(99%) contrast(106%);float: left;
 }
 .widgetText {
@@ -126,13 +163,13 @@ html, body {
 }
 .menuIcon {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
-    width: 10vh;
+    width: 90px;
     margin: auto;
     margin-bottom: 2vh;
 }
 .aboutUsIcon {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(133deg) brightness(101%) contrast(102%);
-    width: 10vh;
+    width: 90px;
     margin: auto;
     margin-bottom: 4vh;
 }
@@ -144,7 +181,6 @@ html, body {
 .vl {
     border-left: .5vh solid white;
     border-radius: 5vh;
-    margin: 0 5vh;
 }
 
 /*--------------------------------*/
@@ -263,7 +299,157 @@ font-family: 'Yellowtail', cursive;
     letter-spacing: .1vh;
 }
 
+@media (max-width: 1600px) {
+    .infoCont h1 {
+        font-size: 2.5em;
+    }
+    .infoCont {
+        max-width: 100%;
+        margin-right: 2%;
+    }
+    .social {
+        max-width: 100%;
+        margin-right: 2%;
+    }
+    .rightContent h3 {
+        font-size: 1.3em;
+        white-space: nowrap;
+    }
+}
 
+@media (max-width: 1400px) {
+    .contDown {
+        max-width: 100%;
+        padding: 2vh 5vh 5vh;
+    }
+
+    .infoCont h1 {
+        font-size: 2em;
+    }
+    .allWidgetCont {
+        margin: 0;
+    }
+
+    .rightContent {
+        margin: auto;
+    }
+    .vl {
+        margin: 0 1vh;
+    }
+    .linkCont {
+        transform: scale(.8);
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        height: max-content;
+    }
+    .brandCont {
+        transform: scale(.9);
+    }
+
+    .contContent {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .leftContent {
+        margin: auto;
+        width: 100%;
+        margin-bottom: 2vh;
+        border-bottom: 1px solid white;
+        padding-bottom: 2vh;
+    }
+    .vl {
+        display: none;
+    }
+    .leftContent h1 {
+        font-size: 2.5em;
+    }
+    .linkCont {
+        margin-top: 5vh;
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        padding: 2vh;
+        width: 200px;
+        height: 180px;
+        transform: scale(1.3);
+    }
+    .menuIcon, .aboutUsIcon {
+        filter: none;
+    }
+}
+
+@media (max-width: 740px) {
+    * {
+        color: brown;
+    }
+    .brandCont {
+        transform: scale(.8);
+    }
+    .infoCont h1 {
+        font-size: 2em;
+    }
+    .socialCont {
+        margin: auto 0;
+        width: 30%;
+    }
+    .socialIcon {
+        margin: 0 .5vh;
+    }
+    .allWidgetCont {
+        margin: auto;
+        justify-content: right;
+        white-space: nowrap;
+    }
+    .widgetCont {
+        font-size: .8em;
+    }
+    .rightContent {
+        display: flex;
+        flex-direction: column;
+    }
+    .linkCont {
+        margin: 5vh auto;
+    }
+}
+
+@media (max-width: 550px) {
+    * {
+        color: green;
+    }
+    .leftContent h1 {
+        font-size: 3em;
+        text-align: left;
+    }
+    .socialCont {
+        width: 10%;
+    }
+    .allWidgetCont {
+        margin: auto 2vh;
+    }
+    .widgetCont {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 440px) {
+    * {
+        color: yellow;
+    }
+    .allWidgetCont {
+        flex-direction: column;
+    }
+    .leftContent h1 {
+        font-size: 2em;
+        text-align: left;
+    }
+    .brandCont {
+        transform: scale(.8);
+    }
+}
 /*
 font-family: 'Caveat', cursive;
 font-family: 'Kaushan Script', cursive;
