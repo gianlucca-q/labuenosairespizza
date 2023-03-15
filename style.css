@@ -10,11 +10,14 @@
     transition: all .3s;
 }
 html, body {
+    background-color: #0c1318;
     background-image: url(./imgs/pizzaBackground.jpg);
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: 50% 30%;
-    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
 }
 
 .opacity2 {
@@ -57,7 +60,6 @@ html, body {
     margin: 0;
     padding: 0;
     margin-top: 2vh;
-    outline: auto;
 
     font-size: 5em;
     color: white;
@@ -386,6 +388,9 @@ font-family: 'Yellowtail', cursive;
     .brandCont {
         transform: scale(.8);
     }
+    .brandText {
+        outline: auto;
+    }
     .infoCont h1 {
         font-size: 2em;
     }
@@ -426,6 +431,7 @@ font-family: 'Yellowtail', cursive;
     }
     .widgetCont {
         transform: scale(1);
+        margin-bottom: 1vh;
     }
 }
 
@@ -441,6 +447,8 @@ font-family: 'Yellowtail', cursive;
         transform: scale(.8);
     }
 }
+
+
 /*
 font-family: 'Caveat', cursive;
 font-family: 'Kaushan Script', cursive;
