@@ -383,9 +383,6 @@ font-family: 'Yellowtail', cursive;
 }
 
 @media (max-width: 740px) {
-    * {
-        color: brown;
-    }
     .brandCont {
         transform: scale(.8);
     }
@@ -417,9 +414,6 @@ font-family: 'Yellowtail', cursive;
 }
 
 @media (max-width: 550px) {
-    * {
-        color: green;
-    }
     .leftContent h1 {
         font-size: 3em;
         text-align: left;
@@ -436,9 +430,6 @@ font-family: 'Yellowtail', cursive;
 }
 
 @media (max-width: 440px) {
-    * {
-        color: yellow;
-    }
     .allWidgetCont {
         flex-direction: column;
     }
