@@ -279,26 +279,28 @@ font-family: 'Yellowtail', cursive;
     margin: auto;
     width: 100%;
     height: 200px;
+    background-color: #0c1318;
     background-image: url(./imgs/pizzaListOne.jpg);
     background-size: cover;
-    background-position: 0 30%;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+
 }
 
 /*--------------------------------*/
 
-.contWidget {
-    padding: 2vh;
-}
 .textWidget {
     margin: 0;
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 1.8em;
     letter-spacing: .1vh;
+    width: max-content;
 }
 
 .textWidgetPrice{
@@ -308,6 +310,41 @@ font-family: 'Yellowtail', cursive;
     font-size: 1.8em;
     letter-spacing: .1vh;
 }
+
+.leftMenuWidget {
+    margin: 0;
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+.rightMenuWidget {
+    margin: 0;
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1460px) {
+    .menuWidgetsCont{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftMenuWidget {
+        border-bottom: 1px solid white;
+    }
+} 
+@media (max-width: 1200px) {
+    .widgetTitle {
+        margin: auto;
+        padding: auto;
+        font-size: 8em;
+    }
+    .contWidgetTitle {
+        margin: auto;
+    }
+} 
+
+
 
 @media (max-width: 1600px) {
     .infoCont h1 {
